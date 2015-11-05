@@ -2,25 +2,47 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
-
+    background: $brand-color;
     // Positioning context for the mobile navigation icon
     position: relative;
+    img {
+        margin: 10px 0;
+        width: 120px;
+    }
+}
+
+.header-top {
+    position: relative;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.header-sub {
+    background: url(/img/bg.jpg) no-repeat 0px -130px;
+    background-size: cover;
+    height: 150px;
+    text-align: center;
 }
 
 .site-title {
+    box-sizing: border-box;
     font-size: 26px;
     font-weight: 300;
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
-    float: left;
-
+    color: white;
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding-top: 50px;
+    background: rgba(4,121,187,0.5);
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: white;
+    }
+    &:hover {
+        text-decoration: none;
     }
 }
 
@@ -33,7 +55,7 @@
     }
 
     .page-link {
-        color: $text-color;
+        color: white;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the last one
@@ -92,6 +114,44 @@
     }
 }
 
+
+// Site content links
+
+.content-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+        box-sizing: border-box;
+        float: left;
+        width: 31%;
+        padding: 10px 20px;
+        margin: 0 2% 2% 0;
+        border: 1px solid $brand-color;
+        min-height: 150px;
+        line-height: 22px;
+        border-radius: 5px;
+        &:nth-child(4) {
+            clear: both;
+        }
+        @media screen and (max-width: 767px) {
+            float: none;
+            border: none;
+            border-bottom: 1px solid $brand-color;
+            width: auto;
+            border-radius: 0;
+        }
+    }
+    a {
+        display: block;
+        text-transform: uppercase;
+        color: $brand-color2;
+        font-weight: bold;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
 
 
 /**

@@ -4,20 +4,13 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
+  <ul class="content-list">
+    <li><a href="http://www.findmypast.co.uk/home/brandguidelines" target="_blank">Brand guidelines</a> Online cut down version of our core brand guidelines</li>
+    <li><a href="#">Using CSS</a>Standards, naming conventions and best practices for CSS in FMP projects.</li>
+    <li><a href="#">Using images</a>The CDN is coming soon! But until then, how to deal with images</li>
+    <li><a href="https://github.com/findmypast/brightstrap" target="_blank">Brightstrap (deprecated)</a>UI Framework used in all projects. Will be replaced with the new style guide.</li>
+    <li><a href="https://fortawesome.github.io/Font-Awesome/" target="_blank">FontAwesome</a> Third party dependency used by all projects</li>
+    <li><a href="#">Styleguide (coming soon!)</a> Watch this space, our new API driven living style guide is going to revolutionise the way we work</li>
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>

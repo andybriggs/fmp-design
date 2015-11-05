@@ -8,4 +8,4 @@ This site is designed to help Front End Designers at Findmypast work on our rang
 
 This site is where we attempt to define those standards! We have a way to go before things are perfect but this is a good place to start. If you want to get involved or suggest updates and changes then by all means get creating some pull requests!
 
-git@github.com:andybriggs/fmp-design.git
+`git@github.com:andybriggs/fmp-design.git`
